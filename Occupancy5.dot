@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<Light &le; 362.75<br/>gini = 0.331<br/>samples = 6514<br/>value = [5150, 1364]<br/>class = not occupied>, fillcolor="#e58139bb"] ;
+1 [label=<Light &le; 355.25<br/>gini = 0.002<br/>samples = 5081<br/>value = [5076, 5]<br/>class = not occupied>, fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<CO2 &le; 1725.75<br/>gini = 0.002<br/>samples = 5073<br/>value = [5069, 4]<br/>class = not occupied>, fillcolor="#e58139ff"] ;
+1 -> 2 ;
+3 [label=<gini = 0.001<br/>samples = 5065<br/>value = [5062, 3]<br/>class = not occupied>, fillcolor="#e58139ff"] ;
+2 -> 3 ;
+4 [label=<gini = 0.219<br/>samples = 8<br/>value = [7, 1]<br/>class = not occupied>, fillcolor="#e58139db"] ;
+2 -> 4 ;
+5 [label=<gini = 0.219<br/>samples = 8<br/>value = [7, 1]<br/>class = not occupied>, fillcolor="#e58139db"] ;
+1 -> 5 ;
+6 [label=<Temperature &le; 22.226<br/>gini = 0.098<br/>samples = 1433<br/>value = [74, 1359]<br/>class = occupied>, fillcolor="#399de5f1"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<CO2 &le; 487.0<br/>gini = 0.039<br/>samples = 1197<br/>value = [24, 1173]<br/>class = occupied>, fillcolor="#399de5fa"] ;
+6 -> 7 ;
+8 [label=<gini = 0.497<br/>samples = 28<br/>value = [15, 13]<br/>class = not occupied>, fillcolor="#e5813922"] ;
+7 -> 8 ;
+9 [label=<gini = 0.015<br/>samples = 1169<br/>value = [9, 1160]<br/>class = occupied>, fillcolor="#399de5fd"] ;
+7 -> 9 ;
+10 [label=<CO2 &le; 904.875<br/>gini = 0.334<br/>samples = 236<br/>value = [50, 186]<br/>class = occupied>, fillcolor="#399de5ba"] ;
+6 -> 10 ;
+11 [label=<gini = 0.44<br/>samples = 49<br/>value = [33, 16]<br/>class = not occupied>, fillcolor="#e5813983"] ;
+10 -> 11 ;
+12 [label=<gini = 0.165<br/>samples = 187<br/>value = [17, 170]<br/>class = occupied>, fillcolor="#399de5e6"] ;
+10 -> 12 ;
+}

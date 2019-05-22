@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<Temperature &le; 21.253<br/>gini = 0.329<br/>samples = 4885<br/>value = [3872, 1013]<br/>class = not occupied>, fillcolor="#e58139bc"] ;
+1 [label=<CO2 &le; 490.167<br/>gini = 0.118<br/>samples = 3547<br/>value = [3324, 223]<br/>class = not occupied>, fillcolor="#e58139ee"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Light &le; 288.708<br/>gini = 0.008<br/>samples = 3048<br/>value = [3035, 13]<br/>class = not occupied>, fillcolor="#e58139fe"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 3023<br/>value = [3023, 0]<br/>class = not occupied>, fillcolor="#e58139ff"] ;
+2 -> 3 ;
+4 [label=<gini = 0.499<br/>samples = 25<br/>value = [12, 13]<br/>class = occupied>, fillcolor="#399de514"] ;
+2 -> 4 ;
+5 [label=<Humidity &le; 32.873<br/>gini = 0.487<br/>samples = 499<br/>value = [289, 210]<br/>class = not occupied>, fillcolor="#e5813946"] ;
+1 -> 5 ;
+6 [label=<gini = 0.46<br/>samples = 246<br/>value = [88, 158]<br/>class = occupied>, fillcolor="#399de571"] ;
+5 -> 6 ;
+7 [label=<gini = 0.327<br/>samples = 253<br/>value = [201, 52]<br/>class = not occupied>, fillcolor="#e58139bd"] ;
+5 -> 7 ;
+8 [label=<Weekend &le; 0.5<br/>gini = 0.484<br/>samples = 1338<br/>value = [548, 790]<br/>class = occupied>, fillcolor="#399de54e"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Humidity &le; 21.852<br/>gini = 0.413<br/>samples = 1115<br/>value = [325, 790]<br/>class = occupied>, fillcolor="#399de596"] ;
+8 -> 9 ;
+10 [label=<gini = 0.208<br/>samples = 297<br/>value = [35, 262]<br/>class = occupied>, fillcolor="#399de5dd"] ;
+9 -> 10 ;
+11 [label=<gini = 0.458<br/>samples = 818<br/>value = [290, 528]<br/>class = occupied>, fillcolor="#399de573"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 223<br/>value = [223, 0]<br/>class = not occupied>, fillcolor="#e58139ff"] ;
+8 -> 12 ;
+}
